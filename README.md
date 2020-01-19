@@ -1,6 +1,6 @@
-# Flutter Clock Clock 24
+# Flutter Twenty Four Clock
 
 My submission to the Flutter Clock Challenge
 
-<img src='flutter_clockclock24/clockclock24.gif.gif' width='350'>
+<img src='twentyfour_clock/twentyfour_clock.gif' width='350'>
 

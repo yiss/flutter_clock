@@ -1,5 +1,6 @@
-import 'package:clockclock24_clock/src/utils.dart';
 import 'package:flutter/material.dart';
+
+import 'utils.dart';
 
 enum HandType { H, M }
 
