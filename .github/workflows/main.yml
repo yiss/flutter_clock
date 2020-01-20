@@ -14,7 +14,6 @@ jobs:
       - uses: subosito/flutter-action@v1
         with:
           channel: 'dev'
-      - run: cd twentyfour_clock
       - run: ls
       - run: flutter config --enable-web 
       - run: flutter pub get
