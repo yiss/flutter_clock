@@ -14,12 +14,13 @@ jobs:
       - uses: subosito/flutter-action@v1
         with:
           channel: 'dev'
+          working-directory: ./twentyfour_clock
+    
+      - run: ls
+      - run: flutter config --enable-web
+      - run: flutter pub get
+      - run: flutter build web --release
       - run: |
-          cd twentyfour_clock/
-          flutter config --enable-web
-          flutter pub get
-          flutter build web --release
-          ls
           cd build/web
           ls
           git init
