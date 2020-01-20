@@ -14,11 +14,11 @@ jobs:
       - uses: subosito/flutter-action@v1
         with:
           channel: 'dev'
-      - run: ls
       - run: flutter config --enable-web 
-      - run: flutter pub get
-      - run: flutter build web --release
       - run: |
+          cd twentyfour_clock/
+          flutter pub get
+          flutter build web --release
           cd build/web
           git init
           # type configurations: your user.email and user.name followed lines 
