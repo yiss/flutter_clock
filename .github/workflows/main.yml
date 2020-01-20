@@ -15,6 +15,7 @@ jobs:
         with:
           channel: 'dev'
       - run: cd twentyfour_clock
+      - run: ls
       - run: flutter config --enable-web 
       - run: flutter pub get
       - run: flutter build web --release
