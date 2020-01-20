@@ -14,12 +14,13 @@ jobs:
       - uses: subosito/flutter-action@v1
         with:
           channel: 'dev'
-      - run: flutter config --enable-web 
       - run: |
           cd twentyfour_clock/
+          flutter config --enable-web
           flutter pub get
           flutter build web --release
           cd build/web
+          ls
           git init
           # type configurations: your user.email and user.name followed lines 
           # git config --global user.email your_email 
